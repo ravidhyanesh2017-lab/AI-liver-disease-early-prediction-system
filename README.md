@@ -17,5 +17,18 @@ Java | Spring Boot | HTML | CSS
 - Built the **patient data input form and result display pages**
 - Integrated the **backend controller with the frontend templates**
 
+## Application Screenshots
+
+### Home Page
+![Home Page](home.png.jpeg)
+
+### Patient Input Page
+![Input Page](input.png.jpeg)
+
+### Prediction Result (Normal)
+![Result Normal](result1.png.jpeg)
+
+### Prediction Result (Needs Evaluation)
+![Result Warning](result2.png.jpeg)
 ## Project Type
 Group Mini Project
