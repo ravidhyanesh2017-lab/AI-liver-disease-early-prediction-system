@@ -1,0 +1,86 @@
+<html>
+
+<head>
+
+<style>
+
+body{
+font-family:Arial;
+background:linear-gradient(to right,#43cea2,#185a9d);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.box{
+background:white;
+padding:40px;
+border-radius:10px;
+text-align:center;
+width:350px;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+a{
+text-decoration:none;
+padding:10px 20px;
+background:#185a9d;
+color:white;
+border-radius:5px;
+}
+
+a:hover{
+background:#0f3e6d;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>🧠 Early Liver Health Assessment</h2>
+
+<h1 th:text="${prediction}"></h1>
+<h3>Assessment Summary</h3>
+
+<div th:if="${prediction == 'Needs Evaluation'}">
+<p style="color:red; font-weight:bold;">
+⚠️ The entered biochemical parameters indicate a higher probability 
+of liver dysfunction. Abnormal levels of bilirubin, liver enzymes 
+(SGPT, SGOT), or protein levels may suggest possible liver damage 
+or inflammation.
+</p>
+
+<p>
+It is recommended to consult a healthcare professional and undergo 
+further clinical evaluation such as liver function tests, ultrasound, 
+or medical examination.
+</p>
+</div>
+
+<div th:if="${prediction == 'Normal'}">
+<p style="color:green; font-weight:bold;">
+✅ The entered biochemical parameters appear to be within normal 
+or acceptable ranges. The risk of liver disease is predicted to be low.
+</p>
+
+<p>
+However, regular health check-ups and maintaining a healthy lifestyle 
+are recommended to ensure proper liver function.
+</p>
+</div>
+
+<a href="/">Check Again</a>
+
+</div>
+
+</body>
+
+</html>
