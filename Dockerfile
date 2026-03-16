@@ -4,12 +4,10 @@ WORKDIR /app
 
 COPY demo /app
 
-RUN apt-get update && apt-get install -y python3 python3-pip
+RUN apt-get update && apt-get install -y python3 python3-pip maven
 
 RUN pip3 install --break-system-packages numpy pandas scikit-learn
 
-RUN chmod +x mvnw
-
-RUN ./mvnw clean package
+RUN mvn clean package
 
 CMD ["java","-jar","target/demo-0.0.1-SNAPSHOT.jar"]
