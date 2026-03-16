@@ -35,7 +35,7 @@ public String predict(
     try {
 
         ProcessBuilder pb = new ProcessBuilder(
-                "python",
+                "python3",
                 "predict.py",
                 String.valueOf(age),
                 String.valueOf(tb),
@@ -47,7 +47,7 @@ public String predict(
                 String.valueOf(alb)
         );
 
-        pb.directory(new File("C:\\Users\\Lenovo\\eclipse-workspace\\Mini Project\\demo"));
+        pb.directory(new File("."));
 
         Process process = pb.start();
 
