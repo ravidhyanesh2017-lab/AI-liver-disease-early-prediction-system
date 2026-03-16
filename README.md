@@ -18,7 +18,7 @@ Java | Spring Boot | HTML | CSS
 - Integrated the **backend controller with the frontend templates**
 
 ## Live Application
-https://your-render-link.onrender.com
+https://ai-liver-disease-early-prediction-system-ut61.onrender.com/
 
 ## Application Screenshots
 
