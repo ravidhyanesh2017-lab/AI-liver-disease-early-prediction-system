@@ -2,7 +2,7 @@ FROM openjdk:17
 
 WORKDIR /app
 
-COPY . .
+COPY demo /app
 
 RUN chmod +x mvnw
 
