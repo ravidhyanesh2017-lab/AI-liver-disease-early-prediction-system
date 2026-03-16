@@ -6,7 +6,7 @@ COPY demo /app
 
 RUN apt-get update && apt-get install -y python3 python3-pip
 
-RUN pip3 install numpy pandas scikit-learn
+RUN pip3 install --break-system-packages numpy pandas scikit-learn
 
 RUN chmod +x mvnw
 
