@@ -57,7 +57,9 @@ of liver dysfunction. Abnormal levels of bilirubin, liver enzymes
 (SGPT, SGOT), or protein levels may suggest possible liver damage 
 or inflammation.
 </p>
-<p th:text="'Abnormality Level: ' + ${percentage} + '%'"></p>
+<p>
+    Abnormality Level: <span th:text="${percentage}"></span>%
+</p>
 <p>
 It is recommended to consult a healthcare professional and undergo 
 further clinical evaluation such as liver function tests, ultrasound, 
