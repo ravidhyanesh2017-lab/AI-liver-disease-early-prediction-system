@@ -35,7 +35,7 @@ public String predict(
     try {
 
         ProcessBuilder pb = new ProcessBuilder(
-                "python3",
+                "python",
                 "predict.py",
                 String.valueOf(age),
                 String.valueOf(tb),
@@ -47,7 +47,7 @@ public String predict(
                 String.valueOf(alb)
         );
 
-        pb.directory(new File("."));
+        pb.directory(new File("C:\\Users\\Lenovo\\eclipse-workspace\\Mini Project\\demo"));
 
         Process process = pb.start();
 
@@ -56,9 +56,15 @@ public String predict(
                         new InputStreamReader(process.getInputStream())
                 );
 
-        String result = reader.readLine();
+        String output = reader.readLine();
 
-        model.addAttribute("prediction", result);
+         String[] parts = output.split(",");
+
+         String result = parts[0];
+         String percentage = parts[1];
+
+         model.addAttribute("prediction", result);
+         model.addAttribute("percentage", percentage);  
 
     } catch (Exception e) {
         e.printStackTrace();
