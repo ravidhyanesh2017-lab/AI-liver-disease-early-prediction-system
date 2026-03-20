@@ -18,7 +18,11 @@ data = scaler.transform(data)
 # predict
 prediction = model.predict(data)[0]
 
-if prediction == 1:
-    print("Needs Evaluation")
+probability = model.predict_proba(data)[0][1]
+
+if prediction == 1: 
+    result = "Needs Evaluation"
 else:
-    print("Normal")
+    result = "Normal"
+
+print(result + "," + str(round(probability * 100, 2)))
