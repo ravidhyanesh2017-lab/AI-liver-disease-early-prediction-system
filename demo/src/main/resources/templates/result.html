@@ -57,7 +57,7 @@ of liver dysfunction. Abnormal levels of bilirubin, liver enzymes
 (SGPT, SGOT), or protein levels may suggest possible liver damage 
 or inflammation.
 </p>
-
+<p th:text="'Abnormality Level: ' + ${percentage} + '%'"></p>
 <p>
 It is recommended to consult a healthcare professional and undergo 
 further clinical evaluation such as liver function tests, ultrasound, 
@@ -68,7 +68,7 @@ or medical examination.
 <div th:if="${prediction == 'Normal'}">
 <p style="color:green; font-weight:bold;">
 ✅ The entered biochemical parameters appear to be within normal 
-or acceptable ranges. The risk of liver disease is predicted to be low.
+or acceptable ranges.
 </p>
 
 <p>
@@ -84,3 +84,9 @@ are recommended to ensure proper liver function.
 </body>
 
 </html>
+
+
+
+
+
+
