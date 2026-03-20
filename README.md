@@ -29,9 +29,9 @@ https://ai-liver-disease-early-prediction-system-ut61.onrender.com/
 ![Input Page](input.png.jpeg)
 
 ### Prediction Result (Normal)
-![Result Normal](result1.png.jpeg)
+![Result Normal](result1.png.png)
 
 ### Prediction Result (Needs Evaluation)
-![Result Warning](result2.png.jpeg)
+![Result Warning](result2.png.png)
 ## Project Type
 Group Mini Project
